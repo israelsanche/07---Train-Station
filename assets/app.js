@@ -108,10 +108,10 @@ database.ref().on("child_added", function(childSnapshot) {
     // 5 + 3:16 = 3:21
 
     // Assumptions
-    var tFrequency = $("#frequency-input").val();
+    var tFrequency = childSnapshot.val().freq;
 
     // Time is 3:30 AM
-    var firstTime =   $("#firsttrain-input").val();
+    var firstTime =   childSnapshot.val().first;
 
     // First Time (pushed back 1 year to make sure it comes before current time)
     var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
