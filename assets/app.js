@@ -154,10 +154,3 @@ var minutesAway = tMinutesTillTrain;
   $("#train-table > tbody").append(newRow);
 });
 
-// Example Time Math
-// -----------------------------------------------------------------------------
-// Assume Employee start date of January 1, 2015
-// Assume current date is March 1, 2016
-
-// We know that this is 15 months.
-// Now we will create code in moment.js to confirm that any attempt we use meets this test case
